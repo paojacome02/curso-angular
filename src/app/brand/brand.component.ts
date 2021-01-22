@@ -23,7 +23,6 @@ export class BrandComponent implements OnInit {
 
     this.route.params.subscribe(parameters => {
       if (parameters.id){
-        console.log(parameters.id)
         this.id = parameters.id;
         this.brands.getSingleBrand(parameters.id).subscribe(res => {
           this.formComplete.get('brand').setValue(res.brand);
