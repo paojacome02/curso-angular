@@ -10,7 +10,7 @@ import {Router} from '@angular/router'
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
-  displayedColumns= ['_id','brand','colection','quantity'];
+  displayedColumns= ['_id','brand','colection','quantity','actions'];
   dataSource = new MatTableDataSource<Brand>();
 
   constructor(private brands: BrandService, private router: Router) {
@@ -23,7 +23,7 @@ export class ListComponent implements OnInit {
   }
 
   edit(id: string){
-    this.router.navigate(['brand',id])
+    this.router.navigate(['brand', id])
   }
 
   delete(id: string){

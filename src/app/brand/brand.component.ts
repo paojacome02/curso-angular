@@ -41,7 +41,7 @@ export class BrandComponent implements OnInit {
     data.brand = this.formComplete.get('brand').value;
     data.colection= this.formComplete.get('colection').value;
     data.quantity= this.formComplete.get('quantity').value
-    console.log("id", this.id)
+
     if(this.id){
       this.brands.updateBrand(this.id, data).subscribe(() => {
         this.router.navigate(['list']);

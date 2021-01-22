@@ -22,7 +22,6 @@ export class BrandService {
   }
 
   updateBrand(id:string, data: Brand){
-    console.log("brand", data)
     return this.http.put('https://super-rest.herokuapp.com/test/pao/' + id, data)
   }
 
