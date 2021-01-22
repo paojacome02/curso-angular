@@ -1,0 +1,18 @@
+<div class="comp-container">
+  <div class="login-container" [formGroup]="formComputer">
+    <mat-form-field>
+      <mat-label>Marca</mat-label>
+      <input matInput placeholder="Ex. Lenovo" formControlName="brand">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Memoria</mat-label>
+      <input mat matInput  type="number" placeholder ="4" formControlName="memory">
+    </mat-form-field>
+    <mat-form-field>
+      –<mat-label>Size</mat-label>
+      <input mat matInput formControlName="size">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="formComputer.invalid" (click)="saveClick()">GUARDAR</button>
+  </div>
+</div>
+

@@ -1,0 +1,9 @@
+.form-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-container{
+height: 100%;
+align-items: center;
+}

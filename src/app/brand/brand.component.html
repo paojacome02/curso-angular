@@ -1,0 +1,19 @@
+<div class="main-container">
+  <div class="form-container" [formGroup]="formComplete">
+    <mat-form-field>
+      <mat-label>Marca</mat-label>
+      <input matInput placeholder="Gucci, Prada, LV, etc." formControlName="brand">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Colección</mat-label>
+      <input matInput placeholder="Primavera 2010" formControlName="colection">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Piezas adquiridas </mat-label>
+      <input matInput type="number" placeholder="1" formControlName="quantity">
+    </mat-form-field>
+    <button mat-raised-button color="primary" [disabled]="formComplete.invalid" (click)="saveClick()">
+      Submit
+    </button>
+  </div>
+</div>
